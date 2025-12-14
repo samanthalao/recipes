@@ -1,0 +1,134 @@
+---
+layout: default
+---
+
+<!-- Featured Carousel -->
+<section class="carousel-section">
+  <div class="carousel-container">
+    <h2 class="carousel-title">Featured Recipes</h2>
+    
+    <div class="carousel-item" id="carousel">
+      <img id="carousel-image" src="" alt="Featured recipe">
+      <div class="carousel-item-overlay">
+        <h3 class="carousel-item-title" id="carousel-title"></h3>
+        <a href="#" id="carousel-link" class="carousel-item-link">View Recipe →</a>
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prev-btn" aria-label="Previous recipe">‹</button>
+      <button class="carousel-btn" id="next-btn" aria-label="Next recipe">›</button>
+    </div>
+
+    <div class="carousel-indicators" id="carousel-indicators"></div>
+  </div>
+</section>
+
+<!-- All Recipes Grid -->
+<section class="recipes-section">
+  <div class="container">
+    <h2 class="recipes-title">All Recipes</h2>
+    
+    <!-- Uncomment below to enable course and season filters
+    <div class="filters my-4">
+      <div class="filter-group mb-3">
+        <label for="filter-course" class="form-label">Course:</label>
+        <select id="filter-course" class="form-select">
+          <option value="">All</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="dessert">Dessert</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-season" class="form-label">Season:</label>
+        <select id="filter-season" class="form-select">
+          <option value="">All</option>
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="fall">Fall</option>
+          <option value="winter">Winter</option>
+        </select>
+      </div>
+    </div>
+    -->
+
+    <div class="recipes-grid" id="recipes-grid">
+      {% for recipe in site.recipes %}
+        {% include recipe-card.html recipe=recipe %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Carousel functionality
+  const recipes = [
+    {% for recipe in site.recipes %}
+      {
+        title: "{{ recipe.title }}",
+        image: "{{ recipe.image | relative_url }}",
+        url: "{{ recipe.url | relative_url }}"
+      }{{ forloop.last | unless: ',' }}
+    {% endfor %}
+  ];
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    if (recipes.length === 0) return;
+    
+    const recipe = recipes[currentIndex];
+    document.getElementById('carousel-image').src = recipe.image;
+    document.getElementById('carousel-title').textContent = recipe.title;
+    document.getElementById('carousel-link').href = recipe.url;
+
+    // Update indicators
+    document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  function initCarousel() {
+    if (recipes.length === 0) return;
+
+    // Create indicators
+    const indicatorsContainer = document.getElementById('carousel-indicators');
+    recipes.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.className = 'carousel-dot' + (index === 0 ? ' active' : '');
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel();
+      });
+      indicatorsContainer.appendChild(dot);
+    });
+
+    updateCarousel();
+
+    // Auto-rotate carousel every 5 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % recipes.length;
+      updateCarousel();
+    }, 5000);
+
+    // Button listeners
+    document.getElementById('prev-btn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + recipes.length) % recipes.length;
+      updateCarousel();
+    });
+
+    document.getElementById('next-btn').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % recipes.length;
+      updateCarousel();
+    });
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCarousel);
+  } else {
+    initCarousel();
+  }
+</script>

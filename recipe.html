@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<article class="recipe-detail">
+  <div class="container recipe-container">
+    <!-- Recipe Header -->
+    <div class="recipe-header">
+      <h1 class="recipe-title">{{ page.title }}</h1>
+      
+      <div class="recipe-meta">
+        <span class="meta-item">
+          <strong>Course:</strong> {{ page.course | capitalize }}
+        </span>
+        <span class="meta-item">
+          <strong>Season:</strong> {{ page.season | capitalize }}
+        </span>
+        {% if page.prep_time %}
+          <span class="meta-item">
+            <strong>Prep Time:</strong> {{ page.prep_time }}
+          </span>
+        {% endif %}
+        {% if page.cook_time %}
+          <span class="meta-item">
+            <strong>Cook Time:</strong> {{ page.cook_time }}
+          </span>
+        {% endif %}
+        {% if page.servings %}
+          <span class="meta-item">
+            <strong>Servings:</strong> {{ page.servings }}
+          </span>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Recipe Image -->
+    {% if page.image %}
+      <div class="recipe-image-container">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-image">
+      </div>
+    {% endif %}
+
+    <div class="recipe-body">
+      <!-- Main Content -->
+      <div class="recipe-main">
+        {{ content }}
+      </div>
+
+      <!-- Sidebar (Comments) -->
+      <aside class="recipe-sidebar">
+        <!-- CommentBox.io Integration -->
+        <div id="commentbox"></div>
+        <script src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
+        <script>
+          commentBox('5637-PROJECT_ID', {
+            defaultBoxId: 'commentbox',
+            backgroundColor: 'transparent'
+          });
+        </script>
+      </aside>
+    </div>
+
+    <!-- Recipe Navigation -->
+    <nav class="recipe-nav">
+      <div class="nav-item prev">
+        {% assign recipes = site.recipes | sort: 'title' %}
+        {% for i in (0..recipes.size) %}
+          {% if recipes[i].url == page.url %}
+            {% if i > 0 %}
+              <a href="{{ recipes[i-1].url | relative_url }}">← {{ recipes[i-1].title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="nav-item back">
+        <a href="{{ '/' | relative_url }}">Back to Recipes</a>
+      </div>
+      <div class="nav-item next">
+        {% assign recipes = site.recipes | sort: 'title' %}
+        {% for i in (0..recipes.size) %}
+          {% if recipes[i].url == page.url %}
+            {% if i < recipes.size - 1 %}
+              <a href="{{ recipes[i+1].url | relative_url }}">{{ recipes[i+1].title }} →</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+</article>
