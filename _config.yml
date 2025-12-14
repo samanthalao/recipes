@@ -1,0 +1,44 @@
+# Site configuration
+title: The Kitchen
+description: Fusion recipes - blending eastern and western ingredients
+url: "" # Leave empty for local testing, or add full URL for production
+baseurl: "" # Leave empty unless your site is in a subdirectory
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_recipes"
+      type: "recipes"
+    values:
+      layout: "recipe"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme
+theme: null
