@@ -79,8 +79,8 @@ layout: default
         {% assign recipes = site.recipes | sort: 'title' %}
         {% for i in (0..recipes.size) %}
           {% if recipes[i].url == page.url %}
-            {% if i < recipes.size | minus: 1 %}
-              {% assign i_plus_one = i | plus: 1 %}
+            {% assign i_plus_one = i | plus: 1 %}
+            {% if i_plus_one < recipes.size %}
               <a href="{{ recipes[i_plus_one].url | relative_url }}">{{ recipes[i_plus_one].title }} →</a>
             {% endif %}
           {% endif %}
