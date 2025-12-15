@@ -2,7 +2,7 @@
 title: The Kitchen
 description: Fusion recipes - blending eastern and western ingredients
 url: "https://samanthalao.github.io/recipes" # Leave empty for local testing, or add full URL for production
-baseurl: "recipes" # Leave empty unless your site is in a subdirectory
+baseurl: "/recipes" # Leave empty unless your site is in a subdirectory
 
 # Build settings
 markdown: kramdown
