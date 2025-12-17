@@ -6,7 +6,7 @@ season: fall
 prep_time: 30 minutes
 cook_time: 20 minutes
 servings: 2
-image: /assets/images/baked-pork-chop-rice.jpg
+image: 
 ---
 
 ## Story
