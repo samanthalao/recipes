@@ -757,7 +757,12 @@ body {
   font-size: var(--font-size-base);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-tight);
+
+}
+h2, h3, h4, h5, h6 {
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-semibold);
   letter-spacing: var(--letter-spacing-tight);
