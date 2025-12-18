@@ -1,14 +1,15 @@
 <div class="recipe-card">
-
+<!--
   <div class="card-image">
     {% if include.recipe.image %}
       <img src="{{ include.recipe.image | relative_url }}" alt="{{ include.recipe.title }}" loading="lazy">
     {% else %}
-    <!--
+    
       <div class="image-placeholder">No image</div>
-      -->
+      
     {% endif %}
   </div>
+  -->
   <div class="card-content">
     <h3 class="card-title">
       <a href="{{ include.recipe.url | relative_url }}">{{ include.recipe.title }}</a>

@@ -5,7 +5,7 @@ course: breakfast
 season: spring
 prep_time: 5 minutes
 servings: 1
-image: /assets/images/matcha-latte.jpg
+image: 
 ---
 
 Posted December 2025
@@ -40,7 +40,7 @@ My first memory with matcha was at Mitsuwa - a japanese supermarket with a food 
 ## Notes
 
 - Don't use boiling water, as it can make the matcha taste bitter. 
-- For a cold matcha latte, whisk the matcha with a small amount of room temperature water first. Pour in cold milk and ice into your cup, followed by the whisked matcha. (Tip: when pouring the matcha, aim the pour on the ice cubes for a layered effect).
+- For a cold matcha latte, whisk the matcha with room temperature water. Pour in cold milk and ice into your cup, followed by the whisked matcha. (Tip: when pouring the matcha, aim the pour on the ice cubes for a layered effect).
 - Use ceremonial grade matcha for the best taste.
 - If you don't have a matcha whisk, a small electric frother works.
 
