@@ -14,12 +14,12 @@ Posted December 2025
 
 My first memory with matcha was at Mitsuwa - a japanese supermarket with a food court inside. There was a small shop in the food court that served matcha drinks, I don't even remember the name, and my sister would often buy an iced matcha (no milk). During the covid shutdown, I got into making matcha lattes at home. Most recently, we hosted a few home cafes this fall/winter season where we served iced and hot matcha lattes! 
 
-(Batch making the matcha concentrate was a game changer - it saved soo much time & no hand whisking involved, which probably saved my hand from cramping - let me know if you'd like the recipe for that!)
+(Batch making the matcha concentrate for the home cafe was a game changer - it saved soo much time & no hand whisking was involved, which probably saved my hand from cramping - let me know if you'd like the recipe for that!)
 
 ## Ingredients
 
 - 1-2 tsp matcha powder (2-3 g)
-- 30 mL warm water (&le 175 F)
+- 30 mL warm water (≤ 175 F)
 - 200 mL milk of choice (suggest dairy or oat)
 - 1 tsp sugar/simple syrup (optional)
 
@@ -40,7 +40,7 @@ My first memory with matcha was at Mitsuwa - a japanese supermarket with a food 
 ## Notes
 
 - Don't use boiling water, as it can make the matcha taste bitter. 
-- For a cold matcha latte, whisk the matcha with a small amount of room temperature water first. Pour in cold milk and ice into your cup, followed by the whisked matcha for a layered effect. (Tip: when pouring the matcha, aim to pour on the ice to ensure the layered effect)
+- For a cold matcha latte, whisk the matcha with a small amount of room temperature water first. Pour in cold milk and ice into your cup, followed by the whisked matcha. (Tip: when pouring the matcha, aim the pour on the ice cubes for a layered effect).
 - Use ceremonial grade matcha for the best taste.
 - If you don't have a matcha whisk, a small electric frother works.
 
