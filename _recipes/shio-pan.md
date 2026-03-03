@@ -1,12 +1,18 @@
- ---
+---
 layout: recipe
 title: Shio Pan
 image: /images/shiopan/IMG_8308.jpg
+course: snack
+season: all
+prep_time: 4 hours
+cook_time: 15 minutes
+servings: 18 rolls
 ---
+Posted February 2026
 
 Luke’s made this recipe twice for two home cafes.
 
-<img src="/images/shiopan/IMG_8308.jpg" alt="Shio Pan Final Product" style="width:100%; max-width:600px; display:block; margin: 0 auto 20px;">
+<img src="{{ '/images/shiopan/IMG_8308.jpg' | relative_url }}" alt="Shio Pan Final Product" style="width:100%; max-width:600px; display:block; margin: 0 auto 20px;">
 
 Shio pan means salt bread in japanese.
 
@@ -39,7 +45,7 @@ Steps:
 3. Add oil, water and the remaining flour mixture.
 
 <div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="/images/shiopan/IMG_8280.jpg" alt="Step 4" style="max-width: 100%; border-radius: 8px;">
+  <img src="{{ '/images/shiopan/IMG_8280.jpg' | relative_url }}" alt="Step 4" style="max-width: 100%; border-radius: 8px;">
   <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">4</span>
 </div>
 
@@ -47,7 +53,7 @@ Steps:
 5. Knead the dough for 2-3 min.
 
 <div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="/images/shiopan/IMG_8287.jpg" alt="Step 6" style="max-width: 100%; border-radius: 8px;">
+  <img src="{{ '/images/shiopan/IMG_8287.jpg' | relative_url }}" alt="Step 6" style="max-width: 100%; border-radius: 8px;">
   <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">6</span>
 </div>
 
@@ -55,21 +61,21 @@ Steps:
 7. Split the dough into 3 equal parts. For each part, shape the dough into a ball, dust flour on the top and bottom of the ball, then lightly roll out the ball to a 0.5 in thick circle
 
 <div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="/images/shiopan/IMG_8289.jpg" alt="Step 8" style="max-width: 100%; border-radius: 8px;">
+  <img src="{{ '/images/shiopan/IMG_8289.jpg' | relative_url }}" alt="Step 8" style="max-width: 100%; border-radius: 8px;">
   <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">8</span>
 </div>
 
 8. Cut each circle into 6 equal wedges (so you end up with 18 total wedges).
 
 <div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="/images/shiopan/IMG_8291.jpg" alt="Step 9" style="max-width: 100%; border-radius: 8px;">
+  <img src="{{ '/images/shiopan/IMG_8291.jpg' | relative_url }}" alt="Step 9" style="max-width: 100%; border-radius: 8px;">
   <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">9</span>
 </div>
 
 9. Dust flour on the sides of each wedge (where you just cut through the dough) to prevent the dough from sticking to the surface or rolling pin. Then roll out the dough to 0.125 in lengthwise. Put a block of butter on the wide side, then roll it up. Wet the inside of the tip of the dough to make it stick.
 
 <div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="/images/shiopan/IMG_8296.jpg" alt="Step 10" style="max-width: 100%; border-radius: 8px;">
+  <img src="{{ '/images/shiopan/IMG_8296.jpg' | relative_url }}" alt="Step 10" style="max-width: 100%; border-radius: 8px;">
   <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">10</span>
 </div>
 
