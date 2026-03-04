@@ -85,6 +85,8 @@ Arguably, L’s most popular bread recipe so far. Enjoy!
 
 ## Notes
 
-- *dough conditioner contains calcium sulfate, L-cystein hydrochloride, vitamin C
-- **can omit the milk powder and replace the 110g of water with milk
-- The tray of boiling water on the bottom rack and spraying the oven with water creates steam which makes the bread rise better. Spraying the bread halfway through baking prevents the bread from getting too burnt on the outside.
+*dough conditioner contains calcium sulfate, L-cystein hydrochloride, vitamin C
+
+**can omit the milk powder and replace the 110g of water with milk
+
+The tray of boiling water on the bottom rack and spraying the oven with water creates steam which makes the bread rise better. Spraying the bread halfway through baking prevents the bread from getting too burnt on the outside.
