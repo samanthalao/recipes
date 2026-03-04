@@ -44,14 +44,14 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="recipe-body">
+    <div class="recipe-body row">
       <!-- Main Content -->
-      <div class="recipe-main">
+      <div class="recipe-main col-lg-8">
         {{ content }}
       </div>
 
       {% if page.photo_grid %}
-      <aside class="recipe-sidebar">
+      <aside class="recipe-sidebar col-lg-4">
         <div class="recipe-step-grid sidebar-grid">
           {% for item in page.photo_grid %}
           <div class="recipe-step-image-container">
