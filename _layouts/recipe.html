@@ -7,7 +7,7 @@ layout: default
     <!-- Recipe Header -->
     <div class="recipe-header">
       <h1 class="recipe-title">{{ page.title }}</h1>
-       
+
       <div class="recipe-meta">
 
         <!--
@@ -20,28 +20,28 @@ layout: default
         --->
 
         {% if page.prep_time %}
-          <span class="meta-item">
-            <strong>Prep Time:</strong> {{ page.prep_time }}
-          </span>
+        <span class="meta-item">
+          <strong>Prep Time:</strong> {{ page.prep_time }}
+        </span>
         {% endif %}
         {% if page.cook_time %}
-          <span class="meta-item">
-            <strong>Cook Time:</strong> {{ page.cook_time }}
-          </span>
+        <span class="meta-item">
+          <strong>Cook Time:</strong> {{ page.cook_time }}
+        </span>
         {% endif %}
         {% if page.servings %}
-          <span class="meta-item">
-            <strong>Servings:</strong> {{ page.servings }}
-          </span>
+        <span class="meta-item">
+          <strong>Servings:</strong> {{ page.servings }}
+        </span>
         {% endif %}
       </div>
     </div>
 
     <!-- Recipe Image -->
     {% if page.image %}
-      <div class="recipe-image-container">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-image">
-      </div>
+    <div class="recipe-image-container">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-image">
+    </div>
     {% endif %}
 
     <div class="recipe-body">
@@ -50,46 +50,51 @@ layout: default
         {{ content }}
       </div>
 
-      <!-- Sidebar (Comments) -->
+      {% if page.photo_grid %}
       <aside class="recipe-sidebar">
-        <!-- CommentBox.io Integration -->
-        <div id="commentbox"></div>
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
-        <script>
-          commentBox('5637-PROJECT_ID', {
-            defaultBoxId: 'commentbox',
-            backgroundColor: 'transparent'
-          });
-        </script>
+        <div class="recipe-step-grid sidebar-grid">
+          {% for item in page.photo_grid %}
+          <div class="recipe-step-image-container">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.step }}" class="recipe-step-image">
+            <span class="recipe-step-number">{{ item.step }}</span>
+          </div>
+          {% endfor %}
+        </div>
       </aside>
+      {% endif %}
     </div>
 
     <!-- Recipe Navigation -->
     <nav class="recipe-nav">
-      <div class="nav-item prev">
-        {% assign recipes = site.recipes | sort: 'title' %}
-        {% for i in (0..recipes.size) %}
-          {% if recipes[i].url == page.url %}
-            {% if i > 0 %}
-              <a href="{{ recipes[i-1].url | relative_url }}">← {{ recipes[i-1].title }}</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-      <div class="nav-item back">
-        <a href="{{ '/' | relative_url }}">Back to Recipes</a>
-      </div>
-      <div class="nav-item next">
-        {% assign recipes = site.recipes | sort: 'title' %}
-        {% for i in (0..recipes.size) %}
-          {% if recipes[i].url == page.url %}
-            {% assign i_plus_one = i | plus: 1 %}
-            {% if i_plus_one < recipes.size %}
-              <a href="{{ recipes[i_plus_one].url | relative_url }}">{{ recipes[i_plus_one].title }} →</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% assign sorted_recipes = site.recipes | sort: 'title' %}
+      {% assign total_count = sorted_recipes.size %}
+
+      {% for r in sorted_recipes %}
+      {% if r.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+
+      {% assign prev_index = current_index | minus: 1 %}
+      {% if prev_index < 0 %} {% assign prev_index=total_count | minus: 1 %} {% endif %} {% assign
+        prev_recipe=sorted_recipes[prev_index] %} {% assign next_index=current_index | plus: 1 %} {% if next_index>=
+        total_count %}
+        {% assign next_index = 0 %}
+        {% endif %}
+        {% assign next_recipe = sorted_recipes[next_index] %}
+
+        <div class="nav-item prev">
+          <a href="{{ prev_recipe.url | relative_url }}">← {{ prev_recipe.title }}</a>
+        </div>
+
+        <div class="nav-item back">
+          <a href="{{ '/' | relative_url }}">Back to Recipes</a>
+        </div>
+
+        <div class="nav-item next">
+          <a href="{{ next_recipe.url | relative_url }}">{{ next_recipe.title }} →</a>
+        </div>
     </nav>
   </div>
 </article>

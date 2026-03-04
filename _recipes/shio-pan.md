@@ -7,18 +7,33 @@ season: all
 prep_time: 4 hours
 cook_time: 15 minutes
 servings: 18 rolls
+photo_grid:
+  - image: /images/shiopan/IMG_8280.jpg
+    step: Step 4
+  - image: /images/shiopan/IMG_8287.jpg
+    step: Step 6
+  - image: /images/shiopan/IMG_8289.jpg
+    step: Step 8
+  - image: /images/shiopan/IMG_8291.jpg
+    step: Step 9
+  - image: /images/shiopan/IMG_8296.jpg
+    step: Step 10
+  - image: /images/shiopan/IMG_8308.jpg
+    step: Final
 ---
-Posted February 2026
+Posted March 2026
+
+## Story
 
 Luke’s made this recipe twice for two home cafes.
-
-<img src="{{ '/images/shiopan/IMG_8308.jpg' | relative_url }}" alt="Shio Pan Final Product" style="width:100%; max-width:600px; display:block; margin: 0 auto 20px;">
 
 Shio pan means salt bread in japanese.
 
 Arguably, L’s most popular bread recipe so far. Enjoy!
 
-Dry Ingredients:
+## Ingredients
+
+### Dry Ingredients
 - 4 cups (615 g) bread flour
 - 1/4 cup (56 g) white sugar
 - 1/2 tsp (2 g) dough conditioner*
@@ -26,19 +41,19 @@ Dry Ingredients:
 - 1 tsp (8 g) salt
 - 1/4 cup (29 g) milk powder**
 
-Wet Ingredients:
+### Wet Ingredients
 - 1.5 cups (291 g) boiling water
 - 1/4 cup (54 g) neutral oil
 - 1/2 cup (110 g) water
 
-Filling:
+### Filling
 - 2.5 sticks butter, cut into 18 pieces (each stick is cut in half along each dimension). There will be 2 extra sticks.
 
-Topping:
+### Topping
 - 1/4 cup melted butter
 - 1 tbsp kosher salt
 
-Steps:
+## Recipe
 
 1. Mix all the dry ingredients together.
 
@@ -68,35 +83,8 @@ Steps:
 
 15. Once the bread is out of the oven, brush with the melted butter on the pan that oozed out of the bread & sprinkle with kosher salt on top. Enjoy!
 
-*dough conditioner contains calcium sulfate, L-cystein hydrochloride, vitamin C
+## Notes
 
-**can omit the milk powder and replace the 110g of water with milk
-
-Note: The tray of boiling water on the bottom rack and spraying the oven with water creates steam which makes the bread rise better. Spraying the bread halfway through baking prevents the bread from getting too burnt on the outside.
-
-<div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="{{ '/images/shiopan/IMG_8280.jpg' | relative_url }}" alt="Step 4" style="max-width: 100%; border-radius: 8px;">
-  <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">4</span>
-</div>
-
-
-<div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="{{ '/images/shiopan/IMG_8287.jpg' | relative_url }}" alt="Step 6" style="max-width: 100%; border-radius: 8px;">
-  <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">6</span>
-</div>
-
-<div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="{{ '/images/shiopan/IMG_8289.jpg' | relative_url }}" alt="Step 8" style="max-width: 100%; border-radius: 8px;">
-  <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">8</span>
-</div>
-
-
-<div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="{{ '/images/shiopan/IMG_8291.jpg' | relative_url }}" alt="Step 9" style="max-width: 100%; border-radius: 8px;">
-  <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">9</span>
-</div>
-
-<div style="position: relative; display: inline-block; margin: 10px 0;">
-  <img src="{{ '/images/shiopan/IMG_8296.jpg' | relative_url }}" alt="Step 10" style="max-width: 100%; border-radius: 8px;">
-  <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">10</span>
-</div>
+- *dough conditioner contains calcium sulfate, L-cystein hydrochloride, vitamin C
+- **can omit the milk powder and replace the 110g of water with milk
+- The tray of boiling water on the bottom rack and spraying the oven with water creates steam which makes the bread rise better. Spraying the bread halfway through baking prevents the bread from getting too burnt on the outside.

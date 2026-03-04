@@ -12,17 +12,17 @@ Posted December 2025
 
 ## Story
 
-Hello! This blog documents the meals created by my husband L and me - mostly L's creations. They are often unconventional, and often driven by what we have on hand and what's on sale. The meals blend western and eastern ingredients and techniques. Fusion cuisine, I guess.
+Hello! This blog documents the meals created by my husband Luke and me - mostly L's creations. They are often unconventional, and often driven by what we have on hand and what's on sale. The meals blend western and eastern ingredients and techniques. Fusion cuisine, I guess.
 
 At times, I question L's creative direction to swap ingredients for the sake of convenience. You can often hear me saying "are you sureee….?" "usually this ingredient is added…." But more times than not, the dish, though untraditional, turns out delicious and has me going back for seconds.
 
-Today L made baked pork chop rice. A classic hong kong diner dish that I grew up eating on our family trips to HK.
+Today Luke made baked pork chop rice. A classic hong kong diner dish that I grew up eating on our family trips to HK.
 
 ### The Traditional Way
 
 Traditionally, it's pan fried pork chop, topped on a bed of fried rice, scrambled with egg. On top of the pork shop is a tomato based sauce with mozzarella cheese on top. You cook the fried rice and pork chop separately, and then combine them with the rest of the components and finish it off in the oven.
 
-### L's Shortcut
+### Luke's Shortcut
 
 Instead of making the tomato based sauce from scratch, L used jarred pasta sauce (it was Rao's, on sale). And instead of mozzarella, we used pecorino & parmesan because that's what we had in the fridge. Though I would recommend mozzarella. The pecorino & parmesan flavors were a bit too sharp for this dish.
 
